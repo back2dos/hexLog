@@ -25,18 +25,6 @@ class LoggerContext implements ILoggerContext
 		loggerRegistry = new Map<String,Logger>();
 	}
 	
-	public function getLoggerByClassInfo(classInfo:ClassInfo, ?messageFactory:IMessageFactory):ILogger
-	{
-		if(classInfo == null)
-		{
-			return getLogger(null, messageFactory);
-		}
-		else
-		{
-			return getLogger(classInfo.fqcn, messageFactory);
-		}
-	}
-	
 	public function getLogger(name:String, ?messageFactory:IMessageFactory):ILogger
 	{
 		name = name == null ? "" : name;
