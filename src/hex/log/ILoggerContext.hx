@@ -10,8 +10,6 @@ import hex.log.LogManager.ClassInfo;
 interface ILoggerContext 
 {
 	
-	function getLoggerByClassInfo(classInfo:ClassInfo, ?messageFactory:IMessageFactory):ILogger;
-	
 	function getLogger(name:String, ?messageFactory:IMessageFactory):ILogger;
 	
 	function getConfiguration():IConfiguration;
