@@ -1,5 +1,5 @@
 package hex.log;
-import hex.log.LogManager.ClassInfo;
+
 import hex.log.configuration.BasicConfiguration;
 import hex.log.configuration.IConfiguration;
 import hex.log.message.IMessageFactory;
